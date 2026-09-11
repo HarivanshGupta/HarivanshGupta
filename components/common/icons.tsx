@@ -9,12 +9,14 @@ import {
   ChevronLeft,
   ChevronRight,
   Clock,
+  Clock3,
   CreditCard,
   File,
   FileText,
   HelpCircle,
   Image,
   Laptop,
+  Lightbulb,
   Loader2,
   LucideProps,
   Menu,
@@ -25,17 +27,19 @@ import {
   Phone,
   Pizza,
   Plus,
+  RefreshCcw,
   Scroll,
   Settings,
   Sparkles,
   SunMedium,
   Trash,
   User,
+  Users,
   X,
   Zap,
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
-import { BiLaugh, BiSolidUser } from "react-icons/bi";
+import { BiLaugh, BiLogoVisualStudio, BiSolidUser } from "react-icons/bi";
 import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
 import {
   HiBriefcase,
@@ -49,6 +53,7 @@ import {
   SiBootstrap,
   SiCss3,
   SiExpress,
+  SiFigma,
   SiGmail,
   SiGraphql,
   SiHtml5,
@@ -128,6 +133,12 @@ export const Icons = {
   gmail: SiGmail,
   twitter: SiX,
   linkedin: SiLinkedin,
+  vscode: BiLogoVisualStudio,
+  figma: SiFigma,
+  lightbulb: Lightbulb,
+  refreshCcw: RefreshCcw,
+  clock3: Clock3,
+  users: Users,
   userFill: BiSolidUser,
   work: HiBriefcase,
   gitHub: ({ ...props }: LucideProps) => (

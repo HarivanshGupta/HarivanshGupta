@@ -9,7 +9,7 @@ import ChipContainer from "@/components/ui/chip-container";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import { Projects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
-import { cn, formatDateFromObj } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
 
 interface ProjectPageProps {
@@ -17,8 +17,6 @@ interface ProjectPageProps {
     projectId: string;
   }>;
 }
-
-const githubUsername = "namanbarkiya";
 
 export default async function Project({ params }: ProjectPageProps) {
   const { projectId } = await params;
@@ -40,12 +38,6 @@ export default async function Project({ params }: ProjectPageProps) {
         All Projects
       </Link>
       <div>
-        <time
-          dateTime={Date.now().toString()}
-          className="block text-sm text-muted-foreground"
-        >
-          {formatDateFromObj(project.startDate)}
-        </time>
         <h1 className="flex items-center justify-between mt-2 font-heading text-4xl leading-tight lg:text-5xl">
           {project.companyName}
           <div className="flex items-center">
@@ -53,13 +45,6 @@ export default async function Project({ params }: ProjectPageProps) {
               <CustomTooltip text="Link to the source code.">
                 <Link href={project.githubLink} target="_blank">
                   <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
-                </Link>
-              </CustomTooltip>
-            )}
-            {project.websiteLink && (
-              <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
-                <Link href={project.websiteLink} target="_blank">
-                  <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                 </Link>
               </CustomTooltip>
             )}
@@ -73,14 +58,14 @@ export default async function Project({ params }: ProjectPageProps) {
           >
             <Image
               src={profileImg}
-              alt={"naman"}
+              alt="Harivansh Kumar Gupta"
               width={42}
               height={42}
               className="rounded-full bg-background"
             />
 
             <div className="flex-1 text-left leading-tight">
-              <p className="font-medium">{"Naman Barkiya"}</p>
+              <p className="font-medium">Harivansh Kumar Gupta</p>
               <p className="text-[12px] text-muted-foreground">
                 @{siteConfig.username}
               </p>

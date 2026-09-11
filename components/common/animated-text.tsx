@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ReactNode } from "react";
 
 interface AnimatedTextProps {
@@ -32,14 +32,15 @@ export const AnimatedText = ({
   className = "",
   as = "div",
 }: AnimatedTextProps) => {
+  const shouldReduceMotion = useReducedMotion();
   const Component = motion[as];
 
   return (
     <Component
-      initial="hidden"
+      initial={shouldReduceMotion ? { opacity: 0 } : "hidden"}
       animate="visible"
       custom={delay}
-      variants={textVariants}
+      variants={shouldReduceMotion ? undefined : textVariants}
       className={className}
     >
       {children}

@@ -18,7 +18,7 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      description: "Harivansh Kumar Gupta's portfolio website.",
     },
   },
   skills: {
@@ -27,7 +27,7 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Skills",
       description:
-        "Naman Barkiya's key skills that define his professional identity.",
+        "The languages and tools Harivansh Kumar Gupta is learning and using.",
     },
   },
   projects: {
@@ -35,51 +35,23 @@ export const pagesConfig: PagesConfig = {
     description: "Showcasing impactful projects and technical achievements.",
     metadata: {
       title: "Projects",
-      description: "Naman Barkiya's projects in building web applications.",
+      description: "Practical software projects built while learning and exploring.",
     },
   },
   contact: {
     title: "Contact",
-    description: "Let's connect and explore collaborations.",
+    description: "Let's connect.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
-    },
-  },
-  contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
-    metadata: {
-      title: "Contributions",
-      description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+      description: "Connect with Harivansh Kumar Gupta.",
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description: "Harivansh Kumar Gupta's resume.",
     metadata: {
       title: "Resume",
-      description: "Naman Barkiya's resume.",
-    },
-  },
-  blogs: {
-    title: "Blogs",
-    description:
-      "Thoughts on AI, software engineering, and building in public.",
-    metadata: {
-      title: "Blogs",
-      description:
-        "Naman Barkiya's blog — thoughts on AI, software engineering, and building in public.",
-    },
-  },
-  experience: {
-    title: "Experience",
-    description: "Professional journey and career timeline.",
-    metadata: {
-      title: "Experience",
-      description:
-        "Naman Barkiya's professional journey and experience timeline.",
+      description: "Harivansh Kumar Gupta's resume.",
     },
   },
 };

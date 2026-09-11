@@ -1,8 +1,11 @@
 import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
-import GithubRedirectCard from "@/components/contact/github-redirect-card";
-import { ContactForm } from "@/components/forms/contact-form";
+import Link from "next/link";
+import { Icons } from "@/components/common/icons";
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 import { pagesConfig } from "@/config/pages";
 
 export const metadata: Metadata = {
@@ -14,15 +17,11 @@ export default function ContactPage() {
   return (
     <PageContainer
       title={pagesConfig.contact.title}
-      description={pagesConfig.contact.description}
+      description="I'm always interested in building useful projects, learning new technologies, and connecting with other developers."
     >
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex-1">
-          <ContactForm />
-        </div>
-        <div className="flex-1 flex justify-end">
-          <GithubRedirectCard />
-        </div>
+      <div className="flex flex-wrap gap-3">
+        <Link href={siteConfig.links.github} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants())}><Icons.gitHub className="mr-2 h-4 w-4" />GitHub</Link>
+        <Link href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer" className={cn(buttonVariants({ variant: "outline" }))}><Icons.linkedin className="mr-2 h-4 w-4" />LinkedIn</Link>
       </div>
     </PageContainer>
   );
